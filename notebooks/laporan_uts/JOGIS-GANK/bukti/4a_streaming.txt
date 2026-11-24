@@ -1,0 +1,36 @@
+Contoh progres query utama (lastProgress):
+ batch  input  input/dtk  proses/dtk  durasi_ms                watermark  state_rows  dibuang_watermark
+     0     17        0.0         0.7      25649 1970-01-01T00:00:00.000Z           2                  0
+     1   1123       43.8        83.5      13443 2026-11-17T18:26:02.000Z          44                  0
+     2    498       37.0        35.7      13936 2026-11-17T18:26:27.000Z          51                  0
+     3    486       34.9        34.6      14041 2026-11-17T18:26:40.000Z          60                  0
+
+Memory sink - 12 baris terbaru:
+      jendela_mulai         wiki  jumlah_edit  jumlah_bot  rasio_bot
+2026-11-18 01:28:00 wikidatawiki          459          74     0.1612
+2026-11-18 01:28:00  commonswiki          359         197     0.5487
+2026-11-18 01:28:00       enwiki          132          10     0.0758
+2026-11-18 01:28:00       bnwiki           27           0     0.0000
+2026-11-18 01:28:00       arwiki           18          14     0.7778
+2026-11-18 01:28:00       frwiki           18           5     0.2778
+2026-11-18 01:28:00       ruwiki           17           3     0.1765
+2026-11-18 01:28:00       eswiki           16           1     0.0625
+2026-11-18 01:28:00      kaawiki           16           0     0.0000
+2026-11-18 01:28:00       viwiki           12          11     0.9167
+2026-11-18 01:28:00       zhwiki           11          10     0.9091
+2026-11-18 01:28:00       dewiki           11           1     0.0909
+
+Berkas hasil foreachBatch: 4 | baris unik (jendela, wiki): 60
+      jendela_mulai       jendela_akhir         wiki  jumlah_edit  jumlah_bot  rasio_bot  batch_id
+2026-11-18 01:28:00 2026-11-18 01:29:00 wikidatawiki          427          68     0.1593         3
+2026-11-18 01:28:00 2026-11-18 01:29:00  commonswiki          326         178     0.5460         3
+2026-11-18 01:28:00 2026-11-18 01:29:00       enwiki          119           7     0.0588         3
+2026-11-18 01:28:00 2026-11-18 01:29:00       bnwiki           27           0     0.0000         2
+2026-11-18 01:28:00 2026-11-18 01:29:00       arwiki           17          13     0.7647         3
+2026-11-18 01:28:00 2026-11-18 01:29:00       frwiki           17           5     0.2941         3
+2026-11-18 01:28:00 2026-11-18 01:29:00       ruwiki           16           3     0.1875         3
+2026-11-18 01:28:00 2026-11-18 01:29:00      kaawiki           15           0     0.0000         3
+2026-11-18 01:28:00 2026-11-18 01:29:00       eswiki           13           1     0.0769         3
+2026-11-18 01:28:00 2026-11-18 01:29:00       viwiki           12          11     0.9167         3
+
+Checkpoint: ['.metadata.crc', 'commits', 'metadata', 'offsets', 'sources', 'state']

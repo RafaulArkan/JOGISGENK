@@ -1,0 +1,14 @@
+Seluruh wiki: 296/296 sama | wiki berbeda: []
+
+10 wiki teratas RDD (2b-i) vs SQL (3b-ii):
+        wiki  rdd_2b_i  edit_manusia  sama
+wikidatawiki     66515         66515  True
+ commonswiki     23715         23715  True
+      enwiki     21338         21338  True
+      frwiki      3429          3429  True
+      dewiki      2989          2989  True
+      ruwiki      2030          2030  True
+      itwiki      2024          2024  True
+      eswiki      1858          1858  True
+     kaawiki      1142          1142  True
+      zhwiki      1020          1020  True

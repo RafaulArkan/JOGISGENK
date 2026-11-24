@@ -1,0 +1,13 @@
+Ping lewat Kafka (kontrol -> status):
+   worker  waktu_respon_ms (Master→Kafka→Worker→Kafka→Master, termasuk jeda polling)
+rafaul-w1                                                                        6.8
+rafaul-w2                                                                        6.5
+rafaul-w3                                                                        6.7
+rafaul-w4                                                                        6.9
+
+Versi di tiap PC (Master: 3.14.8 | pyspark 4.1.3 )
+   worker python pyspark                         executable                                       java
+rafaul-w1 3.14.8   4.1.3 C:\BigData\venv\Scripts\python.exe openjdk version "21.0.12.1" 2026-08-18 LTS
+rafaul-w2 3.14.8   4.1.3 C:\BigData\venv\Scripts\python.exe openjdk version "21.0.12.1" 2026-08-18 LTS
+rafaul-w3 3.14.8   4.1.3 C:\BigData\venv\Scripts\python.exe openjdk version "21.0.12.1" 2026-08-18 LTS
+rafaul-w4 3.14.8   4.1.3 C:\BigData\venv\Scripts\python.exe openjdk version "21.0.12.1" 2026-08-18 LTS

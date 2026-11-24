@@ -1,0 +1,33 @@
+Sumber: kafka | Baris valid: 402,171 | rusak: 0 | unik setelah dropDuplicates(kunci_dedup): 402,171 (RDD 2a: 402,171 -> KONSISTEN)
+root
+ |-- id: long (nullable = true)
+ |-- type: string (nullable = true)
+ |-- wiki: string (nullable = true)
+ |-- server_name: string (nullable = true)
+ |-- title: string (nullable = true)
+ |-- namespace: integer (nullable = true)
+ |-- user: string (nullable = true)
+ |-- anon: boolean (nullable = true)
+ |-- bot: boolean (nullable = false)
+ |-- minor: boolean (nullable = true)
+ |-- timestamp: long (nullable = true)
+ |-- length: struct (nullable = true)
+ |    |-- old: long (nullable = true)
+ |    |-- new: long (nullable = true)
+ |-- comment: string (nullable = true)
+ |-- meta_id: string (nullable = true)
+ |-- waktu: timestamp (nullable = true)
+ |-- selisih_byte: long (nullable = true)
+ |-- kunci_dedup: string (nullable = false)
+
++------+----------+----------------------------------------+-----------+-----+----------+-------------------+------------+------------+
+|  wiki|      type|                                   title|       user|  bot| timestamp|              waktu|      length|selisih_byte|
++------+----------+----------------------------------------+-----------+-----+----------+-------------------+------------+------------+
+|abwiki|       log|Акатегориа:Урыстәылантәи уаанӡатәи аи...|Fraxinus.cs|false|1794930977|2026-11-17 22:56:17|{NULL, NULL}|        NULL|
+|abwiki|categorize|Акатегориа:Урыстәылатәи асахьаҭыхратә...|Fraxinus.cs|false|1794932827|2026-11-17 23:27:07|{NULL, NULL}|        NULL|
+|abwiki|categorize|Акатегориа:Афӷанисҭантәи аибашьра иад...|Fraxinus.cs|false|1794932827|2026-11-17 23:27:07|{NULL, NULL}|        NULL|
+|abwiki|categorize|Акатегориа:Урыстәылатәи адемократиа а...|Fraxinus.cs|false|1794932827|2026-11-17 23:27:07|{NULL, NULL}|        NULL|
+|afwiki|       new|          Bespreking:Senecio bonariensis|    Oesjaar|false|1794927146|2026-11-17 21:52:26|  {NULL, 44}|          44|
++------+----------+----------------------------------------+-----------+-----+----------+-------------------+------------+------------+
+only showing top 5 rows
+Temporary view 'suntingan' terdaftar: ['suntingan']

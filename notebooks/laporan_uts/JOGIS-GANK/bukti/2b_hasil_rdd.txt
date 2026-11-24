@@ -1,0 +1,43 @@
+(i) 10 wiki dengan edit manusia terbanyak (type=edit, bot=false):
+        wiki  edit_manusia
+wikidatawiki         66515
+ commonswiki         23715
+      enwiki         21338
+      frwiki          3429
+      dewiki          2989
+      ruwiki          2030
+      itwiki          2024
+      eswiki          1858
+     kaawiki          1142
+      zhwiki          1020
+
+(ii) 10 halaman idwiki paling banyak disunting:
+                      judul  jumlah_suntingan
+        D'Academy (musim 8)                14
+                   Facebook                 7
+Harimau Putih Terikat Cinta                 6
+  Pengguna:LiškovBot/Switch                 6
+                   Yan Ying                 6
+                   Geo Mild                 5
+       Soerjadi Soerjadarma                 5
+                     Dendam                 4
+Muhammad Kelvin Mardiansyah                 4
+                     Tiktok                 4
+
+(iii) 15 kata terbanyak di comment suntingan idwiki (stopword dibuang):
+        kata  frekuensi
+     altered        124
+       iabot        124
+     needing        124
+notification        124
+      review        124
+     sources        124
+         bot         36
+    kategori         31
+ memperbaiki         25
+       jelas         24
+      defcon         18
+     special         17
+  parameters         16
+    removing         16
+    tracking         16

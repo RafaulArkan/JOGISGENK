@@ -1,0 +1,12 @@
+
+$ <KAFKA_HOME>\bin\windows\kafka-topics.bat --bootstrap-server 192.168.18.173:9092 --describe --topic JOGIS-GANK-wiki-raw
+
+$ <KAFKA_HOME>\bin\windows\kafka-get-offsets.bat --bootstrap-server 192.168.18.173:9092 --topic JOGIS-GANK-wiki-raw
+
+$ <KAFKA_HOME>\bin\windows\kafka-run-class.bat kafka.tools.GetOffsetShell --bootstrap-server 192.168.18.173:9092 --topic JOGIS-GANK-wiki-raw --time -1
+
+$ <KAFKA_HOME>\bin\windows\kafka-console-consumer.bat --bootstrap-server 192.168.18.173:9092 --topic JOGIS-GANK-wiki-raw --from-beginning --max-messages 3 --property print.key=true --property print.partition=true --property print.offset=true
+
+$ <KAFKA_HOME>\bin\windows\kafka-consumer-groups.bat --bootstrap-server 192.168.18.173:9092 --describe --group JOGIS-GANK-wiki-pemroses-51bb3e
+
+KAFKA_HOME belum diisi: jalankan perintah di atas di terminal PC Master lalu ambil tangkapan layar.

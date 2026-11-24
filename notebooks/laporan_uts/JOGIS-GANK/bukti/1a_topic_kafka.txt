@@ -1,0 +1,24 @@
+JOGIS-GANK-wiki-raw      sudah ada
+JOGIS-GANK-kontrol       sudah ada
+JOGIS-GANK-status        sudah ada
+
+JOGIS-GANK-wiki-raw: 8 partisi | konfigurasi: {'compression.type': 'producer', 'min.insync.replicas': '1', 'cleanup.policy': 'delete', 'retention.ms': '259200000', 'max.message.bytes': '1048588'}
+              topic  partisi  leader replika isr
+JOGIS-GANK-wiki-raw        0       1     [1] [1]
+JOGIS-GANK-wiki-raw        1       1     [1] [1]
+JOGIS-GANK-wiki-raw        2       1     [1] [1]
+JOGIS-GANK-wiki-raw        3       1     [1] [1]
+JOGIS-GANK-wiki-raw        4       1     [1] [1]
+JOGIS-GANK-wiki-raw        5       1     [1] [1]
+JOGIS-GANK-wiki-raw        6       1     [1] [1]
+JOGIS-GANK-wiki-raw        7       1     [1] [1]
+
+JOGIS-GANK-kontrol: 1 partisi | konfigurasi: {'compression.type': 'producer', 'min.insync.replicas': '1', 'cleanup.policy': 'delete', 'retention.ms': '604800000', 'max.message.bytes': '1048588'}
+             topic  partisi  leader replika isr
+JOGIS-GANK-kontrol        0       1     [1] [1]
+
+JOGIS-GANK-status: 3 partisi | konfigurasi: {'compression.type': 'producer', 'min.insync.replicas': '1', 'cleanup.policy': 'delete', 'retention.ms': '604800000', 'max.message.bytes': '1048588'}
+            topic  partisi  leader replika isr
+JOGIS-GANK-status        0       1     [1] [1]
+JOGIS-GANK-status        1       1     [1] [1]
+JOGIS-GANK-status        2       1     [1] [1]

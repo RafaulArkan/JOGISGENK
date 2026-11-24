@@ -1,0 +1,9 @@
+Versi Spark        : 4.1.3 | PYSPARK_PYTHON executor: C:\BigData\venv\Scripts\python.exe
+Master             : spark://192.168.18.173:7077
+Spark UI aplikasi  : http://192.168.18.173:4040  | Master UI: http://192.168.18.173:8080
+Executor aktif     : 3
+   - executor   3 di 192.168.18.68:7079     core=2 memori=456 MB
+   - executor   2 di 192.168.18.53:7079     core=2 memori=456 MB
+   - executor   0 di 192.168.18.113:7079    core=2 memori=456 MB
+Sebaran task uji   : {'LAPTOP-DVI8RKSS': 18, 'LAPTOP-4SSHBGPC': 4, 'izxytzy': 10}
+defaultParallelism : 6

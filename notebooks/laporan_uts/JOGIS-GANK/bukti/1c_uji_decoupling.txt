@@ -1,0 +1,29 @@
+Consumer group: JOGIS-GANK-wiki-pemroses-51bb3e | Worker yang mengirim ledger: ['rafaul-w1', 'rafaul-w2', 'rafaul-w3', 'rafaul-w4']
+Lama consumer berhenti: 120 dtk (target 120 dtk); producer tetap mengirim selama itu
+
+1) Consumer melanjutkan dari offset terakhir yang di-commit:
+ partisi  committed_saat_berhenti  offset_pertama_setelah_lanjut  lanjut_tepat  menumpuk_selama_berhenti
+       0                    46673                          46673          True                       626
+       1                    50867                          50867          True                       750
+       2                    46258                          46258          True                       594
+       3                    46728                          46728          True                       633
+       4                    46945                          46945          True                       564
+       5                    55183                          55183          True                       783
+       6                    48990                          48990          True                       584
+       7                    48064                          48064          True                       527
+   Pesan yang menumpuk selama consumer berhenti: 5,061 (producer tidak terganggu = decoupling)
+
+2) Pesan hilang / ganda dalam rentang [offset awal, committed akhir):
+ partisi rentang_uji  pesan_seharusnya  diproses_total  hilang  ganda
+       0  [0, 47395)             47395           47395       0      0
+       1  [0, 51761)             51761           51761       0      0
+       2  [0, 46954)             46954           46954       0      0
+       3  [0, 47465)             47465           47465       0      0
+       4  [0, 47628)             47628           47628       0      0
+       5  [0, 56121)             56121           56121       0      0
+       6  [0, 49672)             49672           49672       0      0
+       7  [0, 48716)             48716           48716       0      0
+   TOTAL: seharusnya 395,712 | diproses 395,712 | hilang 0 | ganda 0
+   Commit gagal per Worker (mis. REBALANCE_IN_PROGRESS): {'rafaul-w1': 0, 'rafaul-w2': 0, 'rafaul-w3': 0, 'rafaul-w4': 0}
+
+3) Pemrosesan idempoten dengan kunci wiki+id: 395,712 kali diproses -> 395,712 event unik (dari 395,712 offset; selisih offset vs kunci = duplikat dari sumber/reconnect SSE).

@@ -1,0 +1,5 @@
+optimasi,waktu_terbaik_dtk,task_per_3_eksekusi,shuffle_read_kb_per_3
+shuffle.partitions = 200,7.992,1587,666.3
+shuffle.partitions = 8,1.845,168,270.1
+join tanpa broadcast (SortMergeJoin),5.446,120,775.4
+join broadcast (BroadcastHashJoin),4.923,96,28.3

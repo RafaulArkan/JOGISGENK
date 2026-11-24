@@ -1,0 +1,11 @@
+Baris dibaca            : 402,174 (termasuk 3 baris uji rusak)
+Valid (dict)            : 402,171
+Gagal parse JSON        : 2   <- accumulator
+Field wajib kosong      : 1   <- accumulator
+Event unik (wiki+id)    : 402,171  -> duplikat dibuang 0
+
+Jumlah partisi RDD      : 17 (snapshot) -> parsed 17
+Elemen per partisi glom : [24576, 25600, 24576, 25600, 24576, 25600, 24576, 25600, 25600, 24576, 25600, 24576, 25600, 24576, 25600, 25339, 0]  (partisi terakhir = 3 baris uji rusak dari union, sehingga 0 elemen valid)
+min/maks/rata-rata      : 0 / 25,600 / 23,657
+
+Contoh 1 elemen hasil parsing: {'id': 2091325981, 'type': 'edit', 'wiki': 'enwiki', 'server_name': 'en.wikipedia.org', 'title': 'Roosje Glaser', 'namespace': 0, 'user': 'Peace Upon Me', 'anon': False, 'bot': False, 'minor': False, 'timestamp': 1794926326, 'length': {'old': 18040, 'new': 18034}, 'comment': '/* Liberation dance */', 'meta_id': '104cbcea-936f-4421-93d1-8ce2816aa5aa'}

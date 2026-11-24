@@ -1,0 +1,140 @@
+[
+  {
+    "fase": "A_jalan",
+    "detik": 0,
+    "total_lag": 387497,
+    "log_end": 387497
+  },
+  {
+    "fase": "A_jalan",
+    "detik": 10,
+    "total_lag": 13,
+    "log_end": 387807
+  },
+  {
+    "fase": "A_jalan",
+    "detik": 20,
+    "total_lag": 41,
+    "log_end": 388211
+  },
+  {
+    "fase": "A_jalan",
+    "detik": 30,
+    "total_lag": 66,
+    "log_end": 388588
+  },
+  {
+    "fase": "A_jalan",
+    "detik": 40,
+    "total_lag": 30,
+    "log_end": 388964
+  },
+  {
+    "fase": "A_jalan",
+    "detik": 50,
+    "total_lag": 73,
+    "log_end": 389421
+  },
+  {
+    "fase": "A_jalan",
+    "detik": 60,
+    "total_lag": 56,
+    "log_end": 389721
+  },
+  {
+    "fase": "B_berhenti",
+    "detik": 0,
+    "total_lag": 100,
+    "log_end": 389808
+  },
+  {
+    "fase": "B_berhenti",
+    "detik": 15,
+    "total_lag": 611,
+    "log_end": 390319
+  },
+  {
+    "fase": "B_berhenti",
+    "detik": 30,
+    "total_lag": 1333,
+    "log_end": 391041
+  },
+  {
+    "fase": "B_berhenti",
+    "detik": 45,
+    "total_lag": 1896,
+    "log_end": 391604
+  },
+  {
+    "fase": "B_berhenti",
+    "detik": 60,
+    "total_lag": 2501,
+    "log_end": 392209
+  },
+  {
+    "fase": "B_berhenti",
+    "detik": 75,
+    "total_lag": 3115,
+    "log_end": 392823
+  },
+  {
+    "fase": "B_berhenti",
+    "detik": 90,
+    "total_lag": 3752,
+    "log_end": 393460
+  },
+  {
+    "fase": "B_berhenti",
+    "detik": 106,
+    "total_lag": 4401,
+    "log_end": 394109
+  },
+  {
+    "fase": "B_berhenti",
+    "detik": 120,
+    "total_lag": 5061,
+    "log_end": 394769
+  },
+  {
+    "fase": "C_lanjut",
+    "detik": 0,
+    "total_lag": 4304,
+    "log_end": 395012
+  },
+  {
+    "fase": "C_lanjut",
+    "detik": 3,
+    "total_lag": 39,
+    "log_end": 395121
+  },
+  {
+    "fase": "C_lanjut",
+    "detik": 6,
+    "total_lag": 17,
+    "log_end": 395230
+  },
+  {
+    "fase": "C_lanjut",
+    "detik": 9,
+    "total_lag": 71,
+    "log_end": 395365
+  },
+  {
+    "fase": "C_lanjut",
+    "detik": 12,
+    "total_lag": 13,
+    "log_end": 395518
+  },
+  {
+    "fase": "C_lanjut",
+    "detik": 15,
+    "total_lag": 58,
+    "log_end": 395619
+  },
+  {
+    "fase": "C_lanjut",
+    "detik": 18,
+    "total_lag": 20,
+    "log_end": 395732
+  }
+]

@@ -1,0 +1,4 @@
+skema_key,maks/rata-rata,min/rata-rata,koef_variasi,partisi_terberat_%
+key = wiki (simulasi),4.51,0.13,1.38,56.3
+key = wiki|title (simulasi),1.0,1.0,0.0,12.5
+key = wiki|title (asli di topic),1.0,1.0,0.0,12.5

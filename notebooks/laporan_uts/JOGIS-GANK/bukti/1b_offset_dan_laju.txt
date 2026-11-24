@@ -1,0 +1,14 @@
+Topic JOGIS-GANK-wiki-raw | 8 partisi | jumlah pesan = 385,910
+Laju terukur dari offset (60 dtk): 39.73 pesan/dtk
+Laju rata-rata sejak producer mulai (13.0 menit): 39.70 pesan/dtk
+ partisi  offset_awal (low)  offset_akhir (high)  jumlah_pesan  bertambah_60dtk  laju_pesan_per_dtk
+       0                  0                46251         46251              295                4.92
+       1                  0                50267         50267              393                6.55
+       2                  0                45853         45853              288                4.80
+       3                  0                46309         46309              288                4.80
+       4                  0                46472         46472              264                4.40
+       5                  0                54561         54561              356                5.93
+       6                  0                48534         48534              238                3.97
+       7                  0                47663         47663              262                4.37
+
+Statistik producer: {'berjalan': True, 'menit': 12.96, 'koneksi': 1, 'diproduksi': 30880, 'terkirim': 30868, 'laju_rata': 39.69}
